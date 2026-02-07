@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORJUS - Ванильный Minecraft Сервер</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Outfit Font for Headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="video/62813.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="logo-icon">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                    </path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+                ORJUS <span class="logo-white">Vanilla</span>
+            </a>
+            <nav class="main-nav">
+                <a href="#about">О сервере</a>
+                <a href="#features">Особенности</a>
+                <a href="#join" class="nav-btn">Играть</a>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <span class="hero-tag">Версия: 1.21 - 1.21.11</span>
+            <h1>Просто ванила,<br>просто друзья,<br><span class="highlight">просто весело.</span></h1>
+            <p class="hero-desc">ORJUS — это простой ванильный сервер с лёгким RP и тёплой атмосферой. Место, где можно
+                спокойно играть, общаться и строить свою историю.</p>
+
+            <div class="server-ip-container">
+                <div class="ip-box" id="ip-box">
+                    <span class="ip-text">play.orjus.ru</span>
+                    <button class="copy-btn" id="copy-btn" title="Копировать IP">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="copy-tooltip" id="copy-tooltip">IP скопирован!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>О нас</h2>
+                <p>Мы выделяемся тем, что делаем упор не на кучу модов и сложных систем, а на живое сообщество и
+                    комфортную игру.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="card about-card animate-on-scroll">
+                    <h3>Честный Minecraft</h3>
+                    <p>Никаких донатных преимуществ, запутанных механик и душных правил — только честная игра, где важны
+                        игроки и их идеи.</p>
+                </div>
+                <div class="card about-card animate-on-scroll">
+                    <h3>Комфорт</h3>
+                    <p>Стабильный мир без лишнего грифа и хаоса, куда приятно возвращаться после тяжелого дня.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>На ORJUS тебя ждут</h2>
+            </div>
+
+            <div class="features-grid">
+                <!-- Friendly Community -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3>Дружелюбное комьюнити</h3>
+                    <p>Адекватная аудитория, готовая помочь и поддержать.</p>
+                </div>
+
+                <!-- Roleplay -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12h5" />
+                            <path d="M17 12h5" />
+                            <path d="M7 12a5 5 0 0 1 5-5v0a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5v0a5 5 0 0 1-5-5" />
+                            <path d="M12 7V3" />
+                            <path d="M12 21v-4" />
+                        </svg>
+                    </div>
+                    <h3>Лёгкий RolePlay</h3>
+                    <p>Без обязательных анкет и экзаменов. Играй свою роль свободно.</p>
+                </div>
+
+                <!-- Events -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                            <path d="M4 22h16" />
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                        </svg>
+                    </div>
+                    <h3>Ивенты игроков</h3>
+                    <p>События, созданные самими игроками для игроков.</p>
+                </div>
+
+                <!-- Stability -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Стабильность</h3>
+                    <p>Мир без вайпов каждый месяц и без лишнего хаоса.</p>
+                </div>
+
+                <!-- Casual Features -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <h3>Казуальные фишки</h3>
+                    <p>Небольшие казуальные фишки, которые делают ванилу интереснее.</p>
+                </div>
+
+                <!-- Administration -->
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3>Администрация</h3>
+                    <p>Отзывчивая администрация и понятные правила.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section id="join" class="cta-section">
+        <div class="container animate-on-scroll">
+            <h2>Твой мир ждёт тебя</h2>
+            <p>Здесь не нужно быть профи, чтобы чувствовать себя как дома. Просто заходи, играй и делай ORJUS своим
+                миром.</p>
+            <a href="#hero" class="btn-primary" onclick="copyIp()">Скопировать IP и играть</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">ORJUS</span>
+                <p>&copy; 2024 Orjus Server. Все права защищены.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://discord.gg/hayWZ9ua" target="_blank">Правила</a>
+                <a href="https://discord.gg/VCSj6v3d" target="_blank">Discord</a>
+                <a href="#">Карта</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Settings -->
+    <div class="theme-panel" id="theme-panel">
+        <h3>Выберите тему</h3>
+        <div class="theme-options">
+            <div class="theme-option" onclick="setTheme('default')">
+                <div class="theme-color-preview" style="background: #a3ff00;"></div>
+                <span>Лайм (По умолчанию)</span>
+            </div>
+            <div class="theme-option" onclick="setTheme('purple')">
+                <div class="theme-color-preview" style="background: #d946ef;"></div>
+                <span>Фиолетовый</span>
+            </div>
+            <div class="theme-option" onclick="setTheme('blue')">
+                <div class="theme-color-preview" style="background: #3b82f6;"></div>
+                <span>Синий</span>
+            </div>
+            <div class="theme-option" onclick="setTheme('red')">
+                <div class="theme-color-preview" style="background: #ef4444;"></div>
+                <span>Красный</span>
+            </div>
+            <div class="theme-option" onclick="setTheme('orange')">
+                <div class="theme-color-preview" style="background: #f97316;"></div>
+                <span>Оранжевый</span>
+            </div>
+        </div>
+    </div>
+
+    <button class="settings-btn" id="settings-btn" title="Настройки темы">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.47a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.39a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z">
+            </path>
+            <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
